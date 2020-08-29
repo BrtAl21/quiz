@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="stylequiz.css">
+</head>
+<body>
+    <div class="grid">
+        <div id="QUIZ">
+            <h1>PYTHON QUIZ</h1>
+            <hr style="margin-bottom: 30px">
+
+            <p id="question"></p>
+
+            <div class="buttons">
+                <p>1. What is the output of the following code:</p>
+
+                <p>list1 = ['xyz', 'zara', 'PYnative']
+                print (max(list1))</p>
+                <button id="btn0"><span id="choice0"></span>zara</button>
+                <button id="btn1"><span id="choice1"></span>PYnative</button>
+                <button id="btn2"><span id="choice2"></span>True</button>
+                <button id="btn3"><span id="choice3"></span>False</button>            
+            </div>
+
+            <div class="buttons">
+                <p>2. What is the output of the following code?</p>
+
+                <P>sampleList = [10, 20, 30, 40]
+                del sampleList[0:6]
+                print(sampleList)</p>
+                <button id="btn0"><span id="choice0"></span> []</button>
+                <button id="btn1"><span id="choice1"></span> list index out of range</button>
+                <button id="btn2"><span id="choice2"></span>[10, 20]</button>
+                <button id="btn3"><span id="choice3"></span>False</button>
+            </div>
+
+            <div class="buttons">
+                <p>3. What is the output of the following:</p>
+
+                <p>l = [None] * 10
+                  print(len(l))</p>
+                <button id="btn0"><span id="choice0"></span> 10</button>
+                <button id="btn1"><span id="choice1"></span> 0</button>
+                <button id="btn2"><span id="choice2"></span> Syntax Error</button>
+                <button id="btn3"><span id="choice3"></span>range</button>
+            </div>
+
+            <div class="buttons">
+                <p>4. What is the output of the following list assignment:</p>
+
+                <p>aList = [4, 8, 12, 16]
+                   aList[1:4] = [20, 24, 28]
+                   print(aList)</p>
+                <button id="btn0"><span id="choice0"></span>[4, 20, 24, 28, 8, 12, 16]</button>
+                <button id="btn1"><span id="choice1"></span>[4, 20, 24, 28]</button>
+                <button id="btn2"><span id="choice2"></span>[ 24, 28]</button>
+                <button id="btn3"><span id="choice3"></span>[4, 20, 24, 28, 8]</button>
+            </div>
+
+            <div class="buttons">
+                <p>5. What is the output of the following list assignment:</p>
+
+                <p>sampleList = [10, 20, 30, 40, 50]
+                  sampleList.append(6)
+                  printf(samplelist)
+                  sampleList.append(60)
+                  print(sampleList)</p>
+                <button id="btn0"><span id="choice0"></span> [10, 20, 30, 40, 50, 60]
+                  [10, 20, 30, 40, 50, 60]</button>
+                <button id="btn1"><span id="choice1"></span> [10, 20, 30, 40, 50, 60]
+                  [10, 20, 30, 40, 50, 60, 60]</button>
+                <button id="btn2"><span id="choice2">[10, 20, 30, 40, 50, 60, 60]</span></button>
+                <button id="btn3"><span id="choice3"> [10, 20, 30, 40, 50, 60]
+                 [10, 20, 30, 40, 50, 60, 60]</span></button>
+            </div>
+
+            <div class="buttons">
+                <p>6. What is the output of the following list operation.</p>
+
+                <p>sampleList = [10, 20, 30, 40, 50]
+                   print(sampleList[-2])
+                   print(sampleList[-4:-1])</p>
+                <button id="btn0"><span id="choice0"></span>40[20, 30, 40]</button>
+                <button id="btn1"><span id="choice1"></span> IndexError: list index out of range</button>
+                <button id="btn2"><span id="choice2"></span>list index out of range</button>
+                <button id="btn3"><span id="choice3"></span>range</button>
+            </div>
+
+            <div class="buttons">
+                <p>7. What is the output of the following list comprehension.</p>
+
+                 <p>resList = [x+y for x in ['Hello ', 'Good '] for y in ['Dear', 'Bye']]
+                   print(resList)</p>
+                <button id="btn0"><span id="choice0"></span>[‘Hello Dear’, ‘Hello Bye’, ‘Good Dear’, ‘Good Bye’]</button>
+                <button id="btn1"><span id="choice1"></span>[‘Hello Dear’, ‘Good Dear’, ‘Hello Bye’, ‘Good Bye’]</button>
+                <button id="btn2"><span id="choice2"></span>[‘Hello Dear’, ‘Good Dear’]</button>
+                <button id="btn3"><span id="choice3"></span>[‘Hello Dear’, ‘Good Dear’, ‘Hello Bye’, ‘Good Bye’]</button>
+            </div>
+
+            <div class="buttons">
+                <p>8. What is the output of the following code:</p>
+
+                <p> my_list = ["Hello", "Python"]
+                  print("-".join(my_list))</p>
+                <button id="btn0"><span id="choice0"></span> HelloPython-</button>
+                <button id="btn1"><span id="choice1"></span> Hello-Python</button>
+                <button id="btn2"><span id="choice2"></span>-HelloPython</button>
+                <button id="btn3"><span id="choice3"></span>-Hello Python</button>
+            </div>
+
+            <div class="buttons">
+                <p>9. Select all the correct options to join two lists in Python</p>
+
+                 <P>listOne  =  ['a', 'b', 'c', 'd']
+                   listTwo =  ['e', 'f', 'g']</p>
+                <button id="btn0"><span id="choice0"></span>newList = listOne + listTwo</button>
+                <button id="btn1"><span id="choice1"></span>newList = extend(listOne, listTwo)</button>
+                <button id="btn2"><span id="choice2"></span> newList = listOne.extend(listTwo)</button>
+                <button id="btn3"><span id="choice3"></span>newList.extend(listOne, listTwo)</button>
+            </div>
+
+             <div class="buttons">
+                <p>10. Select all the correct options to copy a list.</p>
+
+                 <p>aList = ['a', 'b', 'c', 'd']</p>
+                <button id="btn0"><span id="choice0"></span> newList = copy(aList)</button>
+                <button id="btn1"><span id="choice1"></span>newList = aList.copy()</button>
+                <button id="btn2"><span id="choice2"></span>newList.copy(aList)</button>
+                <button id="btn3"><span id="choice3"></span>newList = list(aList)</button>
+            </div>
+
+            <hr style="margin-top: 10px">
+            <footer>
+                <p id="progress">PYTHON QUESTIONS</p>
+            </footer>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
